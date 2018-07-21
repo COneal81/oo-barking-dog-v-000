@@ -2,15 +2,20 @@
 class Dog 
     def initialize(name,bark)
       @name=name
+      @bark = bark
+    end
+    
+    def name=(name_bark)
+      name,bark=name_bark.split
+      @name = name
+      @bark = bark
     end
     
     def name
-      @name
+      "#{name}"
     end
     
-    def name=(new_name)
-      @name = new_name
-    end
+    
  
   puts "woof!"
     
